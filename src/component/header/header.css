@@ -14,10 +14,11 @@
 	background-color: #7FB3C5E6;
 	}
 
-.header__in1 {
+.header__in1, .header__in2 {
 	height: 59px;
-	width: 1200px;
-	margin: 0px 304.5px;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0px auto;
 	padding: 0px 10px;
 	font-size: 16px;
 	line-height: 1.7;
@@ -38,8 +39,7 @@
 	}
 
 	img {
-		height: auto;
-		vertical-align: top;
+	vertical-align: top;
 	}
 
 	.header__logo__fixed, .header__logo__sp {
@@ -47,37 +47,40 @@
 	}
 
 .header__tools {
+	display: flex;
+	gap: 5rem;
+	flex-flow: nowrap;
+	height: 59px;
 	float: right;
 	width: 872px;
-	padding-right: 102px;
+	padding: 20px 5px;
+	cursor: pointer;
+}
+
+.button {
+	padding: 20px 5px;
 }
 
 .language {
-	padding: 20px 5px;
-	color: #fff;
-	width: 149px;
-	height: 59;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	gap: 1rem;
 }
 
 .search {
-	display: inline-block;
-	padding-left: 30px;
-	color: #fff;
-	}
-
-.header__nav {
-	height: 93px;
-	background-color: #fff;
-	}
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 1rem;
+}
 
 .header__in2 {
 	height: 93px;
-	width: 1200px;
-	margin: 0px 304.5px;
-	padding: 0px 10px;
-	font-size: 16px;
-	line-height: 1.7;
-	text-align: left;
-	position: relative;
 }
 
+.header__nav {
+	height: 93px;
+	overflow: hidden;
+	float: left;
+	background: url(https://www.tokyo-skytree.jp/en/common/img/gnavi-event-plus.jpg) 0 0 no-repeat;
+		}
