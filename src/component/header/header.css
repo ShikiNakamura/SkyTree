@@ -1,86 +1,164 @@
 .header {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	height: 152px;
-	z-index: 9999;
-	background-color: #fff;
-	display: block;
-	
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 152px;
+  z-index: 9999;
+  background-color: #fff;
+  display: block;
 }
 
-.header__control {
-	position: relative;
-	background-color: #7FB3C5E6;
-	}
-
-.header__in1, .header__in2 {
-	height: 59px;
-	width: 100%;
-	max-width: 1200px;
-	margin: 0px auto;
-	padding: 0px 10px;
-	font-size: 16px;
-	line-height: 1.7;
-	text-align: left;
-	position: relative;
-	
+.header_container {
+  width: 100%;
 }
 
-.header__logo a{
-	overflow: hidden;
-	display: block;
-	position: absolute;
-	top: 12px;
-	left: 13px;
-	right: 13px;
-	bottom: 0;
-	text-indent: -9999px;
-	}
+.header_container_blue {
+  background-color: #7fb3c5e6;
+}
 
-	img {
-	vertical-align: top;
-	}
+.top_menu {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: left;
+}
 
-	.header__logo__fixed, .header__logo__sp {
-		display: none;
-	}
+.top_menu_menu {
+  display: flex;
+  padding-left: 241px;
+}
 
-.header__tools {
-	display: flex;
-	gap: 5rem;
-	flex-flow: nowrap;
-	height: 59px;
-	float: right;
-	width: 872px;
-	padding: 20px 5px;
-	cursor: pointer;
+.header__logo {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  display: block;
+  background: white;
+  padding: 20px 40px;
+  box-shadow: 1px 1px 100px 12px #0000000f;
+  z-index: 2;
+}
+
+.header__logo img {
+  width: 146px;
+  height: 100%;
 }
 
 .button {
-	padding: 20px 5px;
+  padding: 20px 5px;
 }
 
-.language {
-	display: flex;
-	flex-wrap: nowrap;
-	flex-direction: row;
-	gap: 1rem;
+.menu_button {
+  background: transparent;
+  border: none;
+  display: flex;
+  min-width: 160px;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 20px 10px;
+  cursor: pointer;
 }
 
-.search {
-	display: flex;
-	flex-wrap: nowrap;
-	gap: 1rem;
+.menu_button:hover {
+  background: #99c2d2;
 }
 
-.header__in2 {
-	height: 93px;
+.menu_button p {
+  font-size: 14px;
+  color: #fff;
+}
+
+.menu_button img {
+  width: 23px;
+  height: 23px;
+}
+
+.tobu_img {
+  width: 77px;
+  height: auto;
+  margin-left: 40px;
+}
+
+.list {
+  display: flex;
+}
+
+.item {
+  height: 103px;
+  width: 143px;
+  overflow: hidden;
 }
 
 .header__nav {
-	height: 93px;
-	overflow: hidden;
-	float: left;
-	background: url(https://www.tokyo-skytree.jp/en/common/img/gnavi-event-plus.jpg) 0 0 no-repeat;
-		}
+  margin-left: 35%;
+}
+
+.tickets {
+	width: 130px; 
+	height: 88px;
+	background: url('../../img/header/sprite/tickets.png');
+	background-position: -0 -0;
+}
+.tickets:hover {
+	background-position: -0 -88px;
+}
+
+.access {
+	width: 132px; 
+	height: 92px;
+	background: url('../../img/header/sprite/access.png');
+	background-position: -0 -0;
+}
+
+.access:hover {
+	background-position: -0 -92px;
+}
+
+.floor {
+	width: 132px; 
+	height: 92px;
+	background: url('../../img/header/sprite/floor.png');
+	background-position: -0 -0;
+}
+
+.floor:hover{
+	background-position: -0 -92px;
+}
+
+
+/* .tickets {
+  background: url("../../img/header/header-nav.png") 0 0 no-repeat;
+  height: 206px;
+  width: 143px;
+}
+.tickets:hover {
+  transform: translate(0px, -103px);
+}
+
+.access {
+  background: url("../../img/header/header-nav.png") 0 0 no-repeat;
+  height: 206px;
+  width: 286px;
+  transform: translate(-143px, 0px);
+}
+.access:hover {
+  transform: translate(-143px, -103px);
+}
+
+.floor {
+  background: url("../../img/header/header-nav.png") 0 0 no-repeat;
+  height: 206px;
+  width: 429px;
+  transform: translate(-286px, 0px);
+}
+.floor:hover {
+  transform: translate(-286px, -103px);
+} */
